@@ -1,0 +1,51 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.landing-container,
+.future-container {
+    width: 100%;
+    height: 60vh;
+    background: rgba(0, 0, 0, 0.2) url("../images/landing.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.landing-page-btn {
+    background-color: #f7b318;
+}
+
+.future-container {
+    background: rgba(0, 0, 0, 0.5) url("../images/landing.jpeg");
+    height: 50vh;
+}
+
+.service-card {
+    border-radius: 20px;
+}
+
+.testmony-card {
+    background-color: #C8e0ca;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.4px);
+    -webkit-backdrop-filter: blur(12.4px);
+    border: 1px solid rgba(255, 255, 255, 0.31);
+}
+
+.service-card-btn:hover {
+    background-color: #f7b318;
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #226338;
+}
