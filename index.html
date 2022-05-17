@@ -18,14 +18,14 @@
 
 <body>
 
-    <head>
-        <nav class="navbar navbar-expand-lg vh-10 navbar-light bg-light p-3">
+    <header>
+        <nav class="navbar position-sticky navbar-expand-lg vh-10 page-navbar p-3">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"><i class="text-white bi bi-list"></i></span>
               </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <!--Nav bar item-->
@@ -34,29 +34,29 @@
                             <a class="nav-link active " aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item px-4 fw-bold ">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="pages/about.html">About</a>
                         </li>
                         <li class="nav-item px-4 fw-bold">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="pages/services.html">Services</a>
                         </li>
                         <li class="nav-item px-4 fw-bold">
-                            <a class="nav-link" href="#">Shop</a>
+                            <a class="nav-link" href="pages/shop.html">Shop</a>
                         </li>
                         <li class="nav-item px-4 fw-bold">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="pages/contact.html">Contact</a>
                         </li>
                     </ul>
 
                     <form class="d-flex position-absolute end-0 me-5">
-                        <button class="btn btn-outline-success" type="submit">Call US</button>
+                        <button class="btn btn-outline-light" type="submit">Call US</button>
                     </form>
                 </div>
             </div>
             </div>
         </nav>
-    </head>
+    </header>
     <div class="container-fluid p-0 vw-100 vh-90">
-        <div class="landing-container container-fluid d-flex align-items-center vh-90 vw-100 mt-5">
+        <div class="landing-container container-fluid d-flex align-items-center vh-90 vw-100">
             <div class="container landing-text text-center">
                 <h1 class="display-4 fw-bold text-white">Agriculture Farm</h1>
                 <h6 class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, unde</h6>
@@ -88,7 +88,7 @@
         <div class="container-fluid mt-5 service-card">
             <h1 class="text-center my-5">Our Services</h1>
             <div class="row d-flex flex-wrap flex-row">
-                <div class="col-3">
+                <div class="col-md-3 col-sm-10">
                     <div class="card service-card border-0">
                         <img class="w-100 h-40 p-3" src="images/services-v1-img1.jpeg" alt="">
                         <div class="card-body">
@@ -102,7 +102,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-10">
                     <div class="card service-card border-0">
                         <img class="w-100 h-40 p-3" src="images/services-v1-img1.jpeg" alt="">
                         <div class="card-body">
@@ -115,7 +115,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-10">
                     <div class="card service-card border-0">
                         <img class="w-100 h-40 p-3" src="images/services-v1-img1.jpeg" alt="">
                         <div class="card-body">
@@ -128,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-10">
                     <div class="card service-card border-0">
                         <img class="w-100 h-40 p-3" src="images/services-v1-img1.jpeg" alt="">
                         <div class="card-body">
@@ -145,14 +145,104 @@
 
             </div>
         </div>
+
+        <!-- Agriculture Image with Div-->
         <div class="container-fluid p-5 future-container d-flex flex-column justify-content-center my-5">
             <h1 class="fw-bold text-white">
                 The Future is Agriculture
             </h1>
-            <button class="btn btn-lg mt-4 landing-page-btn w-25">Explore Now!</button>
+            <div class="container">
+                <button class="btn btn-lg mt-4 landing-page-btn p-3">Explore Now!</button>
+
+            </div>
 
 
         </div>
+        <!--Shop Div-->
+
+        <div class="container my-5 product-container">
+            <h1 class="text-center my-5 fw-bold">Our Products</h1>
+            <div class="row d-flex row-cols-lg-4 row-cols-md-3 row-cols-1 flex-wrap flex-row align-content-md-stretch">
+                <div class="col">
+                    <div class="card product-card border-0">
+                        <div class="img-container">
+                            <img class="p-3 card-img-top" src="images/download.jpeg" alt="">
+
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-bold" style="color: #145858;">Egg</h5>
+                            <div class="row">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, asperiores?</p>
+                            </div>
+                            <div class="wrapper d-flex justify-content-end">
+                                <button class="btn rounded-circle service-card-btn "><i class="bi bi-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card border-0">
+                        <div class="img-container">
+                            <img class=" card-img-top p-3" src="images/services-v1-img1.jpeg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-bold" style="color: #145858;">Vegetable</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, asperiores?</p>
+                            <div class="row"></div>
+                            <div class="wrapper d-flex justify-content-end">
+                                <button class="btn rounded-circle service-card-btn "><i class="bi bi-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card border-0">
+                        <div class="img-container">
+                            <img class="w-100 h-40 p-3" src="images/download (1).jpeg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-bold" style="color: #145858;">Milk</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, asperiores?</p>
+                            <div class="row"></div>
+                            <div class="wrapper d-flex justify-content-end">
+                                <button onclick="hiddencard()" class="btn rounded-circle service-card-btn " id="service-card-btn"><i class="bi bi-arrow-right"></i></button>
+                            </div>
+                        </div>
+                        <div id="hidden-container" class="hidden-container">
+                            Call Us for Order
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card border-0">
+                        <div class="img-container">
+                            <img class="w-100 h-40 p-3" src="images/unnamed.jpeg" alt="">
+
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-bold" style="color: #145858;">Fish</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, asperiores?</p>
+                            <div class="row"></div>
+                            <div class="wrapper d-flex justify-content-end">
+                                <button class="btn rounded-circle service-card-btn "><i class="bi bi-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="container my-5 d-flex justify-content-center">
+                <button class="btn product-btn ">
+                    View All Products
+                </button>
+            </div>
+
+
+        </div>
+
+        <!--Testmony Div-->
         <div class="container my-5 ">
             <h1 class="my-5 text-center">Testimonials</h1>
             <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
@@ -188,34 +278,57 @@
                             <p class="card-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis suscipit excepturi facere, possimus id natus saepe optio enim atque voluptatum nulla minus dolores soluta! Eligendi molestiae nobis nisi veniam delectus?"</p>
                         </div>
                     </div>
+                    </di>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <footer class="row row-cols-5 py-5 my-5 border-top text-white">
-            <div class="col">
-                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-                </a>
+        <!--Footer-->
+        <div class="container-fluid p-0">
+            <footer class="container-fluid pt-5 mt-5">
+                <div class="row row-cols-lg-3 row-cols-md-1 row-cols-1">
+                    <div class="col my-md-0 my-3">
+                        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                        </a>
+                        <h5 class="text-white fw-bold p-4">Visit US</h5>
+                        <ul class="nav flex-row">
+                            <li class="nav-item mx-4"><a href="#" class="nav-link p-0"><i class="bi bi-facebook"></i></a></li>
+                            <li class="nav-item me-4">
+                                <a href="#" class="nav-link p-0"><i class="bi bi-instagram"></i></a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a href="#" class="nav-link p-0"><i class="bi bi-google"></i></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col my-md-0 my-3">
+                        <h5 class="text-white fw-bold mb-4">Links</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-4"><a href="#" class="nav-link p-0">Home</a></li>
+                            <li class="nav-item mb-4"><a href="#" class="nav-link p-0">Features</a></li>
+                            <li class="nav-item mb-4"><a href="#" class="nav-link p-0">Pricing</a></li>
+                            <li class="nav-item mb-4"><a href="#" class="nav-link p-0">FAQs</a></li>
+                            <li class="nav-item mb-4"><a href="#" class="nav-link p-0">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="col my-md-0 my-3">
+                        <h5 class="text-white fw-bold mb-4">Contact US</h5>
+                        <ul class="nav flex-column text-white">
+                            <li class="nav-item mb-4"><i class="bi bi-geo-fill me-3"></i>Head Office: Kathmandu, Nepal</li>
+                            <li class="nav-item mb-4"><i class="bi bi-telephone-fill me-3"></i>Phone NO: 989898989</li>
+                            <li class="nav-item mb-4"><i class="bi bi-envelope-fill me-3"></i>info@goagriculture.com</li>
+                        </ul>
+                    </div>
+            </footer>
+            <div class="container-fluid copy-container py-3 mx-0 fw-bold text-white d-flex justify-content-center">
+                Copyright &copy; 2022 All rights reserved
+            </div>
             </div>
 
-
-            <div class="col">
-                <h5>Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Services</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Shop</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact</a></li>
-                </ul>
-            </div>
-
-
-
-        </footer>
+        </div>
     </div>
+
 </body>
 
 </html>
