@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Teko:wght@300&display=swap');
 body {
     width: 100vw;
     height: 100vh;
@@ -5,39 +7,60 @@ body {
     margin: 0;
 }
 
-.landing-container,
-.future-container {
-    width: 100%;
-    height: 60vh;
-    background: rgba(0, 0, 0, 0.2) url("../images/landing.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: darken;
-}
-
-.landing-page-btn {
-    background-color: #f7b318;
+.page-navbar {
+    background-color: #08470f;
+    color: white;
 }
 
 .future-container {
     background: rgba(0, 0, 0, 0.5) url("../images/landing.jpeg");
     height: 50vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-blend-mode: darken;
+}
+
+.trib p {
+    width: 300px;
+    text-align: center;
 }
 
 .service-card {
     border-radius: 20px;
 }
 
+.service-card-heading {
+    color: #145858;
+    margin-bottom: 1.3em;
+    font-family: 'Roboto';
+}
+
+.home-page-subheading {
+    font-family: 'Play', sans-serif;
+    font-size: 2.5rem;
+    color: #08470f;
+    text-align: center;
+    margin-top: 10px;
+}
+
 .testmony-card {
     background-color: #C8e0ca;
-    /* From https://css.glass */
     background: rgba(255, 255, 255, 0);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(12.4px);
     -webkit-backdrop-filter: blur(12.4px);
     border: 1px solid rgba(255, 255, 255, 0.31);
+}
+
+.service-card-btn {
+    background-color: #d4d4d3;
+    user-select: none;
 }
 
 .service-card-btn:hover {
@@ -47,5 +70,184 @@ body {
 }
 
 footer {
-    background-color: #226338;
+    background-color: #08470f;
+}
+
+footer .nav-link {
+    color: white;
+}
+
+footer .nav-link:hover {
+    color: #f7b318;
+}
+
+.copy-container {
+    background-color: #269734;
+}
+
+.product-card:hover {
+    transform: scale(1.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: ease-out 0.3s;
+}
+
+.img-container {
+    height: 230px;
+    overflow: hidden;
+}
+
+header .nav-link {
+    color: white
+}
+
+.active {
+    color: #08470f;
+}
+
+header .nav-link:hover {
+    color: #f7b318;
+    border-bottom: 2px solid #f7b318;
+}
+
+.page-heading {
+    color: #0f0f0f;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.product-btn {
+    background-color: #f7b318;
+    color: white;
+    font-weight: bold;
+}
+
+.offer-container {}
+
+.hidden-container {
+    background-color: #f7b318;
+    color: white;
+    display: none;
+}
+
+.contact-form-container {
+    background-color: #f1e8d7;
+    ;
+}
+
+.contact-btn,
+.primary-btn {
+    background-color: #f7b318;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(to left, #f7b318 50%, #08470f 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-in-out;
+    color: white;
+    border: none;
+}
+
+.contact-btn:hover,
+.primary-btn:hover {
+    background-position: left bottom;
+    color: white;
+}
+
+.product-card-btn {
+    background-color: #f7b318;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(to left, #b3ac9f 50%, #f7b318 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .3s ease-in-out;
+    color: white;
+    border: none;
+}
+
+.product-card-btn:hover {
+    background-position: left bottom;
+    color: white;
+}
+
+textarea {
+    resize: none;
+}
+
+.page-name-container {
+    background: rgba(0, 0, 0, 0.5) url("../images/landing.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 30vh;
+}
+
+.breadcrumb-item {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: white;
+}
+
+.welcome-banner {
+    background-color: #f7b318;
+    color: white;
+    font-family: 'Play', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.main-heading {
+    font-family: 'Play', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.sub-heading {
+    font-family: 'Play', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
+.text-paragraph {
+    font-family: 'Roboto';
+}
+
+.banner-close-btn {
+    font-size: 20px;
+}
+
+.banner-close-btn:hover {
+    color: white;
+}
+
+.bi-check-circle-fill {
+    color: #f7b318;
+    margin-right: 15px;
+}
+
+.goals-image {
+    border-radius: 10px;
+}
+
+.goals-image-container {
+    border-radius: 10px;
+}
+
+.goal-list>li {
+    margin-top: 10px;
 }
