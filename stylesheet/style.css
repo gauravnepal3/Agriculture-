@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
 body {
     width: 100vw;
     height: 100vh;
@@ -7,13 +8,36 @@ body {
     margin: 0;
 }
 
+header {
+    position: sticky;
+}
+
 .page-navbar {
-    background-color: #08470f;
-    color: white;
+    background-color: #fafafa;
+    color: black;
+    position: sticky;
+    box-shadow: #c1c1c1 0px 0px 10px;
+}
+
+.active {
+    color: #f7b318;
 }
 
 .future-container {
     background: rgba(0, 0, 0, 0.5) url("../images/landing.jpeg");
+    height: 50vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-blend-mode: darken;
+}
+
+.advance-container {
+    background: rgba(0, 0, 0, 0.5) url("../images/istockphoto-483452183-612x612.jpg");
     height: 50vh;
     background-position: center;
     background-attachment: fixed;
@@ -97,11 +121,15 @@ footer .nav-link:hover {
 }
 
 header .nav-link {
-    color: white
+    color: black;
+    font-family: 'Play', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 3px;
 }
 
-.active {
-    color: #08470f;
+header .active {
+    color: #f7b318;
+    border-bottom: 2px solid #f7b318;
 }
 
 header .nav-link:hover {
@@ -224,7 +252,8 @@ textarea {
 }
 
 .text-paragraph {
-    font-family: 'Roboto';
+    font-family: 'Red Hat Display', sans-serif;
+    letter-spacing: 1px;
 }
 
 .banner-close-btn {
@@ -250,4 +279,46 @@ textarea {
 
 .goal-list>li {
     margin-top: 10px;
+}
+
+.image-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.history-container {
+    background-color: #d2cdc5;
+}
+
+.serviceItem {
+    width: 250px;
+    margin: 0px 10px;
+}
+
+.serviceImg {
+    width: 200px;
+    height: 250px;
+}
+
+.advance-info-text {
+    color: #f7b318;
+}
+
+.copy-container {
+    letter-spacing: 1px;
+}
+
+.contact-page-btn {
+    background-color: #08470f;
+    color: white;
+    border-radius: 50%;
+}
+
+.active-btn {
+    background-color: #f7b318
+}
+
+.contact-page-btn:hover {
+    background-color: #f7b318;
+    color: white;
 }
