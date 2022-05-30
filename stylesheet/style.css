@@ -8,10 +8,6 @@ body {
     margin: 0;
 }
 
-header {
-    position: sticky;
-}
-
 .page-navbar {
     background-color: #fafafa;
     color: black;
@@ -19,7 +15,7 @@ header {
     box-shadow: #c1c1c1 0px 0px 10px;
 }
 
-.active {
+header .active {
     color: #f7b318;
 }
 
@@ -119,11 +115,6 @@ header .nav-link {
     font-family: 'Play', sans-serif;
     font-weight: lighter;
     letter-spacing: 3px;
-}
-
-header .active {
-    color: #f7b318;
-    border-bottom: 2px solid #f7b318;
 }
 
 header .nav-link:hover {
@@ -312,6 +303,12 @@ textarea {
     background-color: #f7b318
 }
 
+.back-top-btn {
+    background-color: #f7b318;
+    color: white;
+    border-radius: 50%;
+}
+
 .contact-page-btn:hover {
     background-color: #f7b318;
     color: white;
@@ -323,4 +320,37 @@ textarea {
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         transition: ease-out 0.3s;
     }
+    header .active {
+        color: #f7b318;
+        border-bottom: 2px solid #f7b318;
+    }
+}
+
+#button {
+    display: inline-block;
+    background-color: #f7b318;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button:hover {
+    cursor: pointer;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
 }

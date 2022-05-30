@@ -14,6 +14,11 @@
     </title>
     <link rel="stylesheet" href="../stylesheet/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </head>
 
 <body>
@@ -29,19 +34,19 @@
                 <div class="collapse justify-content-center navbar-collapse" id="navbarNav">
                     <!--Nav bar item-->
                     <ul class="navbar-nav ms-5">
-                        <li class="nav-item px-4 fw-bold">
+                        <li class="nav-item px-4 d-flex justify-content-center fw-bold">
                             <a class="nav-link" href="../index.html">Home</a>
                         </li>
-                        <li class="nav-item px-4 fw-bold ">
+                        <li class="nav-item px-4 d-flex justify-content-center fw-bold ">
                             <a class="nav-link" href="about.html">About</a>
                         </li>
-                        <li class="nav-item px-4 fw-bold">
+                        <li class="nav-item px-4 d-flex justify-content-center fw-bold">
                             <a class="nav-link active" aria-current="page" href="services.html">Services</a>
                         </li>
-                        <li class="nav-item px-4 fw-bold">
+                        <li class="nav-item px-4 d-flex justify-content-center fw-bold">
                             <a class="nav-link" href="shop.html">Shop</a>
                         </li>
-                        <li class="nav-item px-4 fw-bold">
+                        <li class="nav-item px-4 d-flex justify-content-center fw-bold">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
@@ -53,7 +58,7 @@
         </nav>
     </header>
     <div class="shop-main-container container-fluid p-0">
-        <div class="page-name-container d-flex flex-column justify-content-center text-center my-5">
+        <div class="page-name-container d-flex flex-column justify-content-center text-center">
             <h1 class="page-heading main-heading text-white mb-2">Services</h1>
             <nav style="--bs-breadcrumb-divider: '>';" class="text-white" aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center">
@@ -62,23 +67,23 @@
                 </ol>
             </nav>
         </div>
-        <div class="mt-5 container mx-auto">
-            <div class="container mt-5 mx-auto row about-farm-container">
-                <div class="col-md-6 col-12 p-5 image-container">
+        <div class="mt-5 container mx-0 mx-md-auto">
+            <div class="container mt-5 mx-md-auto row about-farm-container">
+                <div class="col-md-6 col-12 p-md-5 px-1 image-container">
                     <img class="about-farm-image image-fluid" src="../images/gettyimages-658980446-1024x1024.jpeg" alt="">
                 </div>
-                <div class="col-md-6 col-12 p-5">
+                <div class="col-md-6 col-12 p-md-5 mt-md-0 mt-5 px-1">
                     <h1 class="fw-bold main-heading">We provide you best organic food.</h1>
                     <h5 class="w-md-75 sub-heading mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis?</h5>
                     <p class="w-md-75 mt-3 text-justify text-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tenetur doloribus itaque incidunt veritatis quas id aliquam nostrum odio repellat natus numquam nam perferendis eaque nesciunt, recusandae harum quibusdam iure, placeat
                         iste deserunt minus autem aliquid quisquam! Consectetur, earum blanditiis.</p>
                 </div>
             </div>
-            <div class="container mt-5 mx-auto row about-farm-container">
-                <div class="col-md-6 col-12 p-5 order-1 image-container">
+            <div class="container mt-5 mx-md-auto row about-farm-container">
+                <div class="col-md-6 order-1 col-12 p-md-5 px-1 image-container">
                     <img class="about-farm-image image-fluid" src="../images/gettyimages-658980446-1024x1024.jpeg" alt="">
                 </div>
-                <div class="col-md-6 col-12 order-0 p-5">
+                <div class="col-md-6 order-0 col-12 p-md-5 mt-md-0 mt-5 px-1">
                     <h1 class="fw-bold main-heading">We provide you best organic food.</h1>
                     <h5 class="w-md-75 sub-heading mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis?</h5>
                     <p class="w-md-75 mt-3 text-justify text-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tenetur doloribus itaque incidunt veritatis quas id aliquam nostrum odio repellat natus numquam nam perferendis eaque nesciunt, recusandae harum quibusdam iure, placeat
@@ -106,11 +111,18 @@
                 <div class="col my-md-0 my-3">
                     <h5 class="text-white main-heading fw-bold mb-4">Links</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-4"><a href="#" class="nav-link sub-heading p-0">Home</a></li>
-                        <li class="nav-item mb-4"><a href="#" class="nav-link sub-heading p-0">Features</a></li>
-                        <li class="nav-item mb-4"><a href="#" class="nav-link sub-heading p-0">Pricing</a></li>
-                        <li class="nav-item mb-4"><a href="#" class="nav-link sub-heading p-0">FAQs</a></li>
-                        <li class="nav-item mb-4"><a href="#" class="nav-link sub-heading p-0">About</a></li>
+                        <li class="nav-item mb-4"><a href="../index.html" class="nav-link sub-heading p-0">Home</a></li>
+                        <li class="nav-item mb-4">
+                            <a href="about.html" class="nav-link sub-heading p-0">About</a>
+                        </li>
+                        <li class="nav-item mb-4">
+                            <a href="services.html" class="nav-link sub-heading p-0">Services</a>
+                        </li>
+                        <li class="nav-item mb-4">
+                            <a href="shop.html" class="nav-link sub-heading p-0">Shop</a>
+                        </li>
+                        <li class="nav-item mb-4">
+                            <a href="contact.html" class="nav-link sub-heading p-0">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col my-md-0 my-3">
