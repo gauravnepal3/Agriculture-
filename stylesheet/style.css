@@ -109,12 +109,6 @@ footer .nav-link:hover {
     background-color: #269734;
 }
 
-.product-card:hover {
-    transform: scale(1.15);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    transition: ease-out 0.3s;
-}
-
 .img-container {
     height: 230px;
     overflow: hidden;
@@ -321,4 +315,12 @@ textarea {
 .contact-page-btn:hover {
     background-color: #f7b318;
     color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .product-card:hover {
+        transform: scale(1.15);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        transition: ease-out 0.3s;
+    }
 }
