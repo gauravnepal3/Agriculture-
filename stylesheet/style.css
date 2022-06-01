@@ -8,16 +8,24 @@ body {
     margin: 0;
 }
 
+
+/* navbar css  */
+
 .page-navbar {
     background-color: #fafafa;
     color: black;
-    position: sticky;
     box-shadow: #c1c1c1 0px 0px 10px;
 }
+
+
+/* active page color */
 
 header .active {
     color: #f7b318;
 }
+
+
+/* parallex effect */
 
 .future-container {
     background: rgba(0, 0, 0, 0.5) url("../images/landing.jpeg");
@@ -49,6 +57,9 @@ header .active {
     width: 300px;
     text-align: center;
 }
+
+
+/* services cards */
 
 .service-card {
     border-radius: 20px;
@@ -89,6 +100,9 @@ header .active {
     font-weight: bold;
 }
 
+
+/* footer styling */
+
 footer {
     background-color: #08470f;
 }
@@ -122,32 +136,10 @@ header .nav-link:hover {
     border-bottom: 2px solid #f7b318;
 }
 
-.page-heading {
-    color: #0f0f0f;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
-}
-
 .product-btn {
     background-color: #f7b318;
     color: white;
     font-weight: bold;
-}
-
-.offer-container {}
-
-.hidden-container {
-    background-color: #f7b318;
-    color: white;
-    display: none;
-}
-
-.contact-form-container {
-    background-color: #f1e8d7;
-    ;
 }
 
 .contact-btn,
@@ -314,6 +306,9 @@ textarea {
     color: white;
 }
 
+
+/* Ipads screen */
+
 @media screen and (min-width: 768px) {
     .product-card:hover {
         transform: scale(1.15);
@@ -323,6 +318,9 @@ textarea {
     header .active {
         color: #f7b318;
         border-bottom: 2px solid #f7b318;
+    }
+    .contact-heading-wrapper {
+        width: 25%;
     }
 }
 
@@ -354,3 +352,36 @@ textarea {
     opacity: 1;
     visibility: visible;
 }
+
+.contact-form-container {
+    background-image: url('../images/Screen\ Shot\ 2022-06-01\ at\ 1.43.57\ PM.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-color: rgb(236, 225, 217);
+}
+
+.call-btn {
+    background-color: #f7b318;
+    color: white;
+    border-radius: 20px;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 65px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: #f7b318;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#myBtn:hover {}
