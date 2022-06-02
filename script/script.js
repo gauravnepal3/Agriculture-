@@ -18,6 +18,7 @@ $('#call-btn').click(function() {
 
 $(document).ready(function() {
     $('.customer-logos').slick({
+        //
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
@@ -42,11 +43,11 @@ $(document).ready(function() {
 //Get the button
 var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+// show button after 500 px
 window.onscroll = function() { scrollFunction() };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         $('#myBtn').show(0);
     } else {
         $('#myBtn').hide(0);
